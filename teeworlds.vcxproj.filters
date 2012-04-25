@@ -1,0 +1,2428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{f76be600-be9b-41a5-bda2-1ae00955fa22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\audio">
+      <UniqueIdentifier>{c86fce6d-23e2-492e-9cfa-f86f0f69fba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\countryflags">
+      <UniqueIdentifier>{544bb40d-6b84-4c6c-98d1-5475852e8f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\editor">
+      <UniqueIdentifier>{eab40769-ee0f-43a1-85ae-62f537284a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\fonts">
+      <UniqueIdentifier>{48099e38-04b2-423e-9117-ebb420789142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\mapres">
+      <UniqueIdentifier>{021d25bc-b8ea-4da7-8d8e-8a7173db6db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\maps">
+      <UniqueIdentifier>{bd5553fd-bbb7-438f-91fa-83bb52da7647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\skins">
+      <UniqueIdentifier>{ba15d41b-53b8-421b-8a12-5916915218b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datasrc">
+      <UniqueIdentifier>{03c9005d-4319-41c6-bfa3-3ebf40477ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{0c5272b3-47be-47b6-9bb0-ea37addbb90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{97cf364e-9e2a-43a3-99d0-b9797b167e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{b2b1ac58-dccf-47a6-85a5-6cf3bfcdba48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\tl">
+      <UniqueIdentifier>{22cf79c1-7a57-4eed-8a2c-b75324ff512e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine">
+      <UniqueIdentifier>{e3a45176-5abd-4618-b6b4-25369613544b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\client">
+      <UniqueIdentifier>{9e4e91df-7545-411f-b580-9f9d7ba3f5db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\docs">
+      <UniqueIdentifier>{dae94d13-07ce-4dc0-ae12-2b426d6f9ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\external">
+      <UniqueIdentifier>{1db77c41-2700-4337-9b7d-8b60ae9a536a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\external\pnglite">
+      <UniqueIdentifier>{0909c3b7-8537-4ab7-8ad9-39fafc4724ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\external\wavpack">
+      <UniqueIdentifier>{ac920a94-fd56-4c62-abfe-488913140409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\external\zlib">
+      <UniqueIdentifier>{11544b9c-2ef2-4b72-9b54-c1e0c39e4493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\server">
+      <UniqueIdentifier>{9a1ae312-e6b8-4573-96a6-bf1345a88a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine\shared">
+      <UniqueIdentifier>{1f2f8b68-c15a-4055-8e1b-d6bdda2786f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game">
+      <UniqueIdentifier>{07080e37-a354-4649-add3-b211c2edf905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\client">
+      <UniqueIdentifier>{7b3af151-903b-4be4-b2b2-57c194dee11e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\client\components">
+      <UniqueIdentifier>{3be4d3db-472a-4f3d-8fb6-0bf4a4d49c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\editor">
+      <UniqueIdentifier>{2041fd0a-4cc5-4dff-ad69-44f6ea3295a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\generated">
+      <UniqueIdentifier>{3fa40639-10c6-41c7-840d-77432029ff21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\server">
+      <UniqueIdentifier>{cd0b88a3-0ed7-49af-ae73-e7bb33589273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\server\entities">
+      <UniqueIdentifier>{038be585-6111-425f-a555-a61a8d0231c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game\server\gamemodes">
+      <UniqueIdentifier>{9e5ef84a-f9b3-4294-b65a-6f991c9c360e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mastersrv">
+      <UniqueIdentifier>{b992284e-71fa-4e36-b72c-549dd2bc3302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\osxlaunch">
+      <UniqueIdentifier>{ec24b6fa-f033-44fb-9326-6aaa50106ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{7301fae1-794f-4f9b-b20f-56b5e4bcebfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\versionsrv">
+      <UniqueIdentifier>{d0b8ddcb-5a13-453c-aeb8-ec5c8dcd92ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\blob.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\browse_icons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\console.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\console_bar.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\debug_font.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\demo_buttons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\emoticons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\file_icons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\game.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\gui_buttons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\gui_cursor.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\gui_icons.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\gui_logo.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\particles.png">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\audio\foley_body_impact-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_impact-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_impact-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_splat-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_splat-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_splat-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_body_splat-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_dbljump-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_dbljump-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_dbljump-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_left-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_left-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_left-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_left-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_right-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_right-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_right-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_foot_right-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_land-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_land-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_land-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\foley_land-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_attach-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_attach-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_attach-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_loop-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_loop-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_noattach-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_noattach-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\hook_noattach-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\music_menu.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_ctf_cap_pl.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_ctf_drop.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_ctf_grab_en.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_ctf_grab_pl.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_ctf_rtn.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_hit_strong-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_hit_strong-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_hit_weak-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_hit_weak-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_hit_weak-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_msg-client.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_msg-highlight.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_msg-server.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_arm-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_arm-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_arm-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_arm-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_gun.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_hrt-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_hrt-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_launcher.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_ninja.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_pickup_sg.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_skid-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_skid-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_skid-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_skid-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_spawn_wpn-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_spawn_wpn-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\sfx_spawn_wpn-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_cry-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_cry-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_ninja-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_ninja-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_ninja-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_ninja-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_long-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_long-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-05.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-06.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-07.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-08.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-09.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-10.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-11.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_pain_short-12.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_sledge-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_sledge-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_sledge-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-05.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-06.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\vo_teefault_spawn-07.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_explo-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_explo-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_explo-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_launch-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_launch-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_flump_launch-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_gun_fire-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_gun_fire-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_gun_fire-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_hit-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_hit-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_hit-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_swing-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_swing-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_hammer_swing-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_attack-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_attack-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_attack-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_attack-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_hit-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_hit-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_hit-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_ninja_hit-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_noammo-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_noammo-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_noammo-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_noammo-04.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_noammo-05.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_bnce-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_bnce-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_bnce-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_fire-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_fire-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_rifle_fire-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_shotty_fire-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_shotty_fire-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_shotty_fire-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_switch-01.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_switch-02.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\audio\wp_switch-03.wv">
+      <Filter>data\audio</Filter>
+    </None>
+    <None Include="data\countryflags\AD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AX.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\AZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BB.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BJ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\BZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CV.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CX.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\CZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\default.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DJ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\DZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\EC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\EE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\EG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\EH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ER.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ES.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ET.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FJ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\FR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GB.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GP.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GQ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\GY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\HK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\HN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\HR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\HT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\HU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ID.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\index.txt">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IQ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\IT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\JE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\JM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\JO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\JP.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KP.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\KZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LB.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LV.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\LY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ME.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ML.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MP.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MQ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MV.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MX.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\MZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NP.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\NZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\OM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\PY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\QA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\RE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\RO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\RS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\RU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\RW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SB.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ST.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SV.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SX.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\SZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TD.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TH.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TJ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TK.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TL.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TO.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TR.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TT.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TV.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\TZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\UA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\UG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\US.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\UY.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\UZ.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VG.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\VU.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\WF.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\WS.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\XEN.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\XNI.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\XSC.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\XWA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\YE.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ZA.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ZM.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\countryflags\ZW.png">
+      <Filter>data\countryflags</Filter>
+    </None>
+    <None Include="data\editor\checker.png">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\cursor.png">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\desert_main.rules">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\entities.png">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\grass_main.rules">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\jungle_main.rules">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\winter_main.rules">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\editor\background.png">
+      <Filter>data\editor</Filter>
+    </None>
+    <None Include="data\fonts\DejaVuSans.ttf">
+      <Filter>data\fonts</Filter>
+    </None>
+    <None Include="data\fonts\LICENSE">
+      <Filter>data\fonts</Filter>
+    </None>
+    <None Include="data\fonts\VERSION">
+      <Filter>data\fonts</Filter>
+    </None>
+    <None Include="data\mapres\bg_cloud1.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\bg_cloud2.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\bg_cloud3.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\desert_doodads.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\desert_main.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\desert_mountains.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\desert_mountains2.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\desert_sun.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\generic_deathtiles.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\generic_unhookable.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\grass_doodads.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\grass_main.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_background.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_deathtiles.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_doodads.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_main.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_midground.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\jungle_unhookables.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\moon.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\mountains.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\snow.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\stars.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\sun.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\winter_doodads.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\winter_main.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\winter_mountains.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\winter_mountains2.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\mapres\winter_mountains3.png">
+      <Filter>data\mapres</Filter>
+    </None>
+    <None Include="data\maps\ctf1.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf2.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf3.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf4.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf5.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf6.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\ctf7.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm1.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm2.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm6.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm7.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm8.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\maps\dm9.map">
+      <Filter>data\maps</Filter>
+    </None>
+    <None Include="data\skins\bluekitty.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\bluestripe.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\brownbear.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\cammo.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\cammostripes.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\coala.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\default.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\limekitty.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\pinky.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\redbopp.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\redstripe.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\saddo.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\toptri.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\twinbop.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\twintri.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\warpaint.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="data\skins\x_ninja.png">
+      <Filter>data\skins</Filter>
+    </None>
+    <None Include="datasrc\compile.py">
+      <Filter>datasrc</Filter>
+    </None>
+    <None Include="datasrc\content.py">
+      <Filter>datasrc</Filter>
+    </None>
+    <None Include="datasrc\datatypes.py">
+      <Filter>datasrc</Filter>
+    </None>
+    <None Include="datasrc\network.py">
+      <Filter>datasrc</Filter>
+    </None>
+    <None Include="scripts\make_release.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\make_src.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\mass_server.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\netobj.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\nicks.txt">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\png.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\process_blame.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\refactor_count.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\tw_api.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\build.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\check_header_guards.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\cmd5.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\compiler.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\copyright.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\count_source.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\dat2c.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\font_converter.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\font_installer.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\gen_keys.py">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\linecount.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\make_docs.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="src\engine\docs\client_time.txt">
+      <Filter>src\engine\docs</Filter>
+    </None>
+    <None Include="src\engine\docs\prediction.txt">
+      <Filter>src\engine\docs</Filter>
+    </None>
+    <None Include="src\engine\docs\server_op.txt">
+      <Filter>src\engine\docs</Filter>
+    </None>
+    <None Include="src\engine\docs\snapshots.txt">
+      <Filter>src\engine\docs</Filter>
+    </None>
+    <None Include="src\engine\external\pnglite\VERSION">
+      <Filter>src\engine\external\pnglite</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\arm.S">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\arml.S">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\coldfire.S">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\license.txt">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\readme.txt">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\VERSION">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\wavpack\wvfilter.c.no_compile">
+      <Filter>src\engine\external\wavpack</Filter>
+    </None>
+    <None Include="src\engine\external\zlib\VERSION">
+      <Filter>src\engine\external\zlib</Filter>
+    </None>
+    <None Include="src\osxlaunch\client.m">
+      <Filter>src\osxlaunch</Filter>
+    </None>
+    <None Include="src\osxlaunch\server.m">
+      <Filter>src\osxlaunch</Filter>
+    </None>
+    <None Include="license.txt" />
+    <None Include="readme.txt" />
+    <None Include="storage.cfg" />
+    <None Include="bam.lua" />
+    <None Include="configure.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scripts\SDL_keysym.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\detect.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\math.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\system.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\vmath.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\algorithm.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\allocator.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\array.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\base.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\range.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\sorted_array.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\string.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\tl\threading.h">
+      <Filter>src\base\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\config.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\console.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\demo.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\editor.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\friends.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\graphics.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\input.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\kernel.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\keys.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\map.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\masterserver.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\message.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\server.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\serverbrowser.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\sound.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\storage.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\textrender.h">
+      <Filter>src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\backend_sdl.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\client.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\friends.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\graphics.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\graphics_threaded.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\input.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\keynames.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\serverbrowser.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\client\sound.h">
+      <Filter>src\engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\pnglite\pnglite.h">
+      <Filter>src\engine\external\pnglite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\wavpack\wavpack.h">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\crc32.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\deflate.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\inffast.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\inffixed.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\inflate.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\inftrees.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\trees.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\zconf.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\zlib.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\external\zlib\zutil.h">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\server\register.h">
+      <Filter>src\engine\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\server\server.h">
+      <Filter>src\engine\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\compression.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\config.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\config_variables.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\console.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\datafile.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\demo.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\econ.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\filecollection.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\huffman.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\jobs.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\linereader.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\mapchecker.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\memheap.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\message.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\netban.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\network.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\packer.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\protocol.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\ringbuffer.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\shared\snapshot.h">
+      <Filter>src\engine\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\collision.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\gamecore.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\layers.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\localization.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\mapitems.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\tuning.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\variables.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\version.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\voting.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\ui.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\animstate.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\component.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\gameclient.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\lineinput.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\render.h">
+      <Filter>src\game\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\camera.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\chat.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\console.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\controls.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\countryflags.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\damageind.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\debughud.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\effects.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\emoticon.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\flow.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\hud.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\items.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\killmessages.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\mapimages.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\maplayers.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\menus.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\motd.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\nameplates.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\particles.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\players.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\scoreboard.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\skins.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\sounds.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\spectator.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\voting.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\binds.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\client\components\broadcast.h">
+      <Filter>src\game\client\components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\editor\auto_map.h">
+      <Filter>src\game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\editor\editor.h">
+      <Filter>src\game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entity.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\eventhandler.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamecontext.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamecontroller.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gameworld.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\player.h">
+      <Filter>src\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entities\character.h">
+      <Filter>src\game\server\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entities\flag.h">
+      <Filter>src\game\server\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entities\laser.h">
+      <Filter>src\game\server\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entities\pickup.h">
+      <Filter>src\game\server\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\entities\projectile.h">
+      <Filter>src\game\server\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamemodes\ctf.h">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamemodes\dm.h">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamemodes\mod.h">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\server\gamemodes\tdm.h">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mastersrv\mastersrv.h">
+      <Filter>src\mastersrv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\osxlaunch\client.h">
+      <Filter>src\osxlaunch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\versionsrv\versionsrv.h">
+      <Filter>src\versionsrv</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\system.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\backend_sdl.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\client.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\friends.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\graphics.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\graphics_threaded.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\input.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\serverbrowser.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\sound.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\client\text.cpp">
+      <Filter>src\engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\pnglite\pnglite.c">
+      <Filter>src\engine\external\pnglite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\bits.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\float.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\metadata.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\unpack.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\words.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\wavpack\wputils.c">
+      <Filter>src\engine\external\wavpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\adler32.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\compress.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\crc32.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\deflate.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\infback.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\inffast.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\inflate.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\inftrees.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\trees.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\uncompr.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\external\zlib\zutil.c">
+      <Filter>src\engine\external\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\server\register.cpp">
+      <Filter>src\engine\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\server\server.cpp">
+      <Filter>src\engine\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\config.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\console.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\datafile.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\demo.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\econ.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\engine.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\filecollection.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\huffman.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\jobs.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\kernel.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\linereader.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\map.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\mapchecker.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\masterserver.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\memheap.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\netban.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network_client.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network_conn.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network_console.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network_console_conn.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\network_server.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\packer.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\ringbuffer.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\snapshot.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\storage.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\shared\compression.cpp">
+      <Filter>src\engine\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\collision.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\gamecore.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\layers.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\localization.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\ui.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\animstate.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\gameclient.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\lineinput.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\render.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\render_map.cpp">
+      <Filter>src\game\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\camera.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\chat.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\console.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\controls.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\countryflags.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\damageind.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\debughud.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\effects.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\emoticon.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\flow.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\hud.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\items.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\killmessages.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\mapimages.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\maplayers.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\menus.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\menus_browser.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\menus_demo.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\menus_ingame.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\menus_settings.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\motd.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\nameplates.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\particles.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\players.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\scoreboard.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\skins.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\sounds.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\spectator.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\voting.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\binds.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\client\components\broadcast.cpp">
+      <Filter>src\game\client\components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\auto_map.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\editor.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\io.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\layer_game.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\layer_quads.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\layer_tiles.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\editor\popups.cpp">
+      <Filter>src\game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entity.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\eventhandler.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamecontext.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamecontroller.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gameworld.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\player.cpp">
+      <Filter>src\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entities\character.cpp">
+      <Filter>src\game\server\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entities\flag.cpp">
+      <Filter>src\game\server\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entities\laser.cpp">
+      <Filter>src\game\server\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entities\pickup.cpp">
+      <Filter>src\game\server\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\entities\projectile.cpp">
+      <Filter>src\game\server\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamemodes\ctf.cpp">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamemodes\dm.cpp">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamemodes\mod.cpp">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\server\gamemodes\tdm.cpp">
+      <Filter>src\game\server\gamemodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mastersrv\mastersrv.cpp">
+      <Filter>src\mastersrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\crapnet.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\dilate.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\fake_server.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\map_resave.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\map_version.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\packetgen.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\tileset_borderadd.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\tileset_borderfix.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\tileset_borderrem.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\tileset_borderset.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\versionsrv\versionsrv.cpp">
+      <Filter>src\versionsrv</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

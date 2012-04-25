@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "teeworlds", "teeworlds.vcxproj", "{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Client_Debug|Win32 = Client_Debug|Win32
+		Client_Release|Win32 = Client_Release|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Server_Debug|Win32 = Server_Debug|Win32
+		Server_Release|Win32 = Server_Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Client_Debug|Win32.ActiveCfg = Client_Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Client_Debug|Win32.Build.0 = Client_Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Client_Release|Win32.ActiveCfg = Client_Release|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Client_Release|Win32.Build.0 = Client_Release|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Debug|Win32.Build.0 = Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Release|Win32.ActiveCfg = Release|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Release|Win32.Build.0 = Release|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Server_Debug|Win32.ActiveCfg = Server_Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Server_Debug|Win32.Build.0 = Server_Debug|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Server_Release|Win32.ActiveCfg = Server_Release|Win32
+		{AA18E4A7-CB2B-DDD8-0F8E-E5E31294F927}.Server_Release|Win32.Build.0 = Server_Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
