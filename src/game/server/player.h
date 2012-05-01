@@ -26,7 +26,7 @@ public:
 
 	void TryRespawn();
 	void Respawn();
-	void SetTeam(int Team, bool DoChatMsg=true);
+	void SetTeam(int Team);
 	int GetTeam() const { return m_Team; };
 	int GetCID() const { return m_ClientID; };
 	bool IsDummy() const { return m_Dummy; }
@@ -110,7 +110,17 @@ public:
 		int m_Max;
 	} m_Latency;
 
+	int TimeDelay;
+
+	bool IsCatcher() const { return Catcher; }
+	void SetCatcher(bool Temp) { Catcher = Temp; }
+	int GetFlagTeam() const { return NumFlag; }
+	void SetFlagTeam(int Temp) { NumFlag = Temp; }
 private:
+
+	bool Catcher;
+	int NumFlag;
+
 	CCharacter *m_pCharacter;
 	CGameContext *m_pGameServer;
 

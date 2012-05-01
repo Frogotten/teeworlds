@@ -56,7 +56,6 @@ class IGameController
 	virtual void DoWincheckMatch();
 	virtual void DoWincheckRound() {};
 	bool HasEnoughPlayers() const { return (IsTeamplay() && m_aTeamSize[TEAM_RED] > 0 && m_aTeamSize[TEAM_BLUE] > 0) || (!IsTeamplay() && m_aTeamSize[TEAM_RED] > 1); }
-	void ResetGame();
 	void SetGameState(EGameState GameState, int Timer=0);
 	void StartMatch();
 	void StartRound();
@@ -190,6 +189,18 @@ public:
 	void DoTeamChange(class CPlayer *pPlayer, int Team, bool DoChatMsg=true);
 	
 	int GetStartTeam();
+
+	int GetCatcher();
+	int MinCatcher();
+
+	void SetCatcher(int Index, bool Catcher);
+	int IsCatcher(int Index);
+	virtual void ChangeCatcher(int Index_Old, int Index_New);
+	void ChangeDetailCatcher(int Index, bool Catch);
+	void ChatCatcherChat(int Index_Old, int Index_New);
+	void ClearCatchers();
+	virtual int IsFlagCharacter(int Index) {return 0;}
+	virtual void ResetGame();
 };
 
 #endif

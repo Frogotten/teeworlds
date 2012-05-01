@@ -54,6 +54,7 @@ public:
 	bool IsAlive() const { return m_Alive; }
 	class CPlayer *GetPlayer() { return m_pPlayer; }
 
+	void NullWeapon();
 private:
 	// player controlling this character
 	class CPlayer *m_pPlayer;

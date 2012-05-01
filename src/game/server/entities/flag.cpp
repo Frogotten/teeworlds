@@ -3,6 +3,8 @@
 #include <game/server/gamecontext.h>
 
 #include "character.h"
+#include "../gamecontroller.h"
+#include "../player.h"
 #include "flag.h"
 
 CFlag::CFlag(CGameWorld *pGameWorld, int Team)
@@ -12,6 +14,7 @@ CFlag::CFlag(CGameWorld *pGameWorld, int Team)
 	m_ProximityRadius = ms_PhysSize;
 	m_pCarryingCharacter = NULL;
 	m_GrabTick = 0;
+	m_Index = -1;
 
 	Reset();
 }
@@ -36,6 +39,43 @@ void CFlag::Snap(int SnappingClient)
 {
 	if(NetworkClipped(SnappingClient))
 		return;
+	if(m_Team >= 2)
+	{
+		if(GameServer()->m_apPlayers[SnappingClient]->IsCatcher() &&
+			m_Team == GameServer()->m_apPlayers[SnappingClient]->GetFlagTeam())
+			return;
+	}
+	if(m_Team < 2)
+	{
+		if(GameServer()->m_apPlayers[SnappingClient]->GetTeam() == TEAM_SPECTATORS)
+			return;
+		if(!GameServer()->m_apPlayers[SnappingClient]->IsCatcher())
+			return;
+		if(m_Team == 0)
+		{
+			if(GameServer()->m_pController->IsFlagCharacter(SnappingClient) >= 0)
+				return;
+			if(m_Index != GameServer()->m_apPlayers[SnappingClient]->GetFlagTeam())
+				return;
+		}
+		if(m_Team == 1)
+		{
+			if(!m_pCarryingCharacter)
+				return;
+			if(GameServer()->m_pController->IsFlagCharacter(SnappingClient) < 0 ||
+				GameServer()->m_pController->IsFlagCharacter(SnappingClient) > 4)
+				return;
+			if(m_pCarryingCharacter->GetPlayer() && m_pCarryingCharacter->GetPlayer()->GetCID() != SnappingClient)
+				return;
+		}
+	}
+
+	if (Server()->Tick()%Server()->TickSpeed() == 0)
+	{
+		char aBu2f[250];
+		str_format(aBu2f, sizeof(aBu2f), "FLAG [p-%d] TEAM [%d]", SnappingClient, m_Team);
+		GameServer()->Console()->Print(IConsole::OUTPUT_LEVEL_DEBUG, "game", aBu2f);
+	}
 
 	CNetObj_Flag *pFlag = (CNetObj_Flag *)Server()->SnapNewItem(NETOBJTYPE_FLAG, m_Team, sizeof(CNetObj_Flag));
 	if(!pFlag)

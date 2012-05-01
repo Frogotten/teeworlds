@@ -415,6 +415,7 @@
     <None Include="data\countryflags\ZA.png" />
     <None Include="data\countryflags\ZM.png" />
     <None Include="data\countryflags\ZW.png" />
+    <None Include="data\deadtee.png" />
     <None Include="data\debug_font.png" />
     <None Include="data\demo_buttons.png" />
     <None Include="data\editor\background.png" />
@@ -530,9 +531,11 @@
     <None Include="src\engine\external\wavpack\VERSION" />
     <None Include="src\engine\external\wavpack\wvfilter.c.no_compile" />
     <None Include="src\engine\external\zlib\VERSION" />
+    <None Include="src\game\generated\createdir.txt" />
     <None Include="src\osxlaunch\client.m" />
     <None Include="src\osxlaunch\server.m" />
     <None Include="storage.cfg" />
+    <None Include="test.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scripts\SDL_keysym.h" />
@@ -647,9 +650,13 @@
     <ClInclude Include="src\game\editor\auto_map.h" />
     <ClInclude Include="src\game\editor\editor.h" />
     <ClInclude Include="src\game\gamecore.h" />
+    <ClInclude Include="src\game\generated\client_data.h" />
+    <ClInclude Include="src\game\generated\protocol.h" />
+    <ClInclude Include="src\game\generated\server_data.h" />
     <ClInclude Include="src\game\layers.h" />
     <ClInclude Include="src\game\localization.h" />
     <ClInclude Include="src\game\mapitems.h" />
+    <ClInclude Include="src\game\server\alloc.h" />
     <ClInclude Include="src\game\server\entities\character.h" />
     <ClInclude Include="src\game\server\entities\flag.h" />
     <ClInclude Include="src\game\server\entities\laser.h" />
@@ -661,7 +668,10 @@
     <ClInclude Include="src\game\server\gamecontroller.h" />
     <ClInclude Include="src\game\server\gamemodes\ctf.h" />
     <ClInclude Include="src\game\server\gamemodes\dm.h" />
+    <ClInclude Include="src\game\server\gamemodes\har.h" />
+    <ClInclude Include="src\game\server\gamemodes\lms.h" />
     <ClInclude Include="src\game\server\gamemodes\mod.h" />
+    <ClInclude Include="src\game\server\gamemodes\sur.h" />
     <ClInclude Include="src\game\server\gamemodes\tdm.h" />
     <ClInclude Include="src\game\server\gameworld.h" />
     <ClInclude Include="src\game\server\player.h" />
@@ -777,6 +787,10 @@
     <ClCompile Include="src\game\editor\layer_tiles.cpp" />
     <ClCompile Include="src\game\editor\popups.cpp" />
     <ClCompile Include="src\game\gamecore.cpp" />
+    <ClCompile Include="src\game\generated\client_data.cpp" />
+    <ClCompile Include="src\game\generated\nethash.cpp" />
+    <ClCompile Include="src\game\generated\protocol.cpp" />
+    <ClCompile Include="src\game\generated\server_data.cpp" />
     <ClCompile Include="src\game\layers.cpp" />
     <ClCompile Include="src\game\localization.cpp" />
     <ClCompile Include="src\game\server\entities\character.cpp" />
@@ -790,7 +804,10 @@
     <ClCompile Include="src\game\server\gamecontroller.cpp" />
     <ClCompile Include="src\game\server\gamemodes\ctf.cpp" />
     <ClCompile Include="src\game\server\gamemodes\dm.cpp" />
+    <ClCompile Include="src\game\server\gamemodes\har.cpp" />
+    <ClCompile Include="src\game\server\gamemodes\lms.cpp" />
     <ClCompile Include="src\game\server\gamemodes\mod.cpp" />
+    <ClCompile Include="src\game\server\gamemodes\sur.cpp" />
     <ClCompile Include="src\game\server\gamemodes\tdm.cpp" />
     <ClCompile Include="src\game\server\gameworld.cpp" />
     <ClCompile Include="src\game\server\player.cpp" />

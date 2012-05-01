@@ -17,6 +17,7 @@
 #include "gamemodes/mod.h"
 #include "gamemodes/sur.h"
 #include "gamemodes/tdm.h"
+#include "gamemodes/har.h"
 #include "gamecontext.h"
 #include "player.h"
 
@@ -40,6 +41,9 @@ void CGameContext::Construct(int Resetting)
 	m_pVoteOptionLast = 0;
 	m_NumVoteOptions = 0;
 	m_LockTeams = 0;
+	
+	GameMode = 0;
+	GameWeapon = 0;
 
 	if(Resetting==NO_RESET)
 		m_pVoteOptionHeap = new CHeap();
@@ -1414,6 +1418,121 @@ void CGameContext::ConchainSpecialMotdupdate(IConsole::IResult *pResult, void *p
 	}
 }
 
+void CGameContext::ConSetGameMode( IConsole::IResult *pResult, void *pUserData )
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	pSelf->GameMode = pResult->GetInteger(0);
+
+	//chat message
+	if(pSelf->GameMode)
+		pSelf->SendChat(-1, CHAT_ALL, "Current game mode: All vs. 1 ");
+	else
+		pSelf->SendChat(-1, CHAT_ALL, "Current game mode: 1 vs. All ");
+
+	for (int i=0; i < MAX_CLIENTS; i++)
+	{
+		CCharacter *pChr = pSelf->GetPlayerChar(i);
+		if(!pChr)
+			continue;
+
+		pChr->NullWeapon();
+		int Catch = pSelf->m_apPlayers[i]->IsCatcher();
+
+		int WeaponType;
+
+		if (Catch)
+		{
+			if (pSelf->GameMode)
+				WeaponType = WEAPON_HAMMER;
+			else
+				WeaponType = pSelf->GameWeapon;
+		}
+		else
+		{
+
+			if (pSelf->GameMode) 
+				WeaponType = pSelf->GameWeapon;
+			else
+				WeaponType = WEAPON_HAMMER;
+		}
+
+		if (WeaponType == WEAPON_NINJA)
+			pChr->GiveNinja();
+		else if (WeaponType == WEAPON_HAMMER)
+			pChr->GiveWeapon(WeaponType, -1);
+		else
+			pChr->GiveWeapon(WeaponType, 10);
+
+		pChr->SetWeapon(WeaponType);
+	}
+}
+
+void CGameContext::ConSetGameWeapon( IConsole::IResult *pResult, void *pUserData )
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	pSelf->GameWeapon = pResult->GetInteger(0);
+
+	switch (pSelf->GameWeapon)
+	{
+	case WEAPON_HAMMER:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Hammer");
+		break;
+	case WEAPON_GUN:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Gun");
+		break;
+	case WEAPON_SHOTGUN:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Shotgun");
+		break;
+	case WEAPON_GRENADE:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Grenade");
+		break;
+	case WEAPON_LASER:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Laser");
+		break;
+	case WEAPON_NINJA:
+		pSelf->SendChat(-1, CHAT_ALL, "Current game weapon: Ninja");
+		break;
+
+	}
+
+	for (int i=0; i < MAX_CLIENTS; i++)
+	{
+		CCharacter *pChr = pSelf->GetPlayerChar(i);
+		if(!pChr)
+			continue;
+
+		pChr->NullWeapon();
+		int Catch = pSelf->m_apPlayers[i]->IsCatcher();
+
+		int WeaponType;
+
+		if (Catch)
+		{
+			if (pSelf->GameMode)
+				WeaponType = WEAPON_HAMMER;
+			else
+				WeaponType = pSelf->GameWeapon;
+		}
+		else
+		{
+
+			if (pSelf->GameMode) 
+				WeaponType = pSelf->GameWeapon;
+			else
+				WeaponType = WEAPON_HAMMER;
+		}
+
+		if (WeaponType == WEAPON_NINJA)
+			pChr->GiveNinja();
+		else if (WeaponType == WEAPON_HAMMER)
+			pChr->GiveWeapon(WeaponType, -1);
+		else
+			pChr->GiveWeapon(WeaponType, 10);
+
+		pChr->SetWeapon(WeaponType);
+	}
+}
+
 void CGameContext::OnConsoleInit()
 {
 	m_pServer = Kernel()->RequestInterface<IServer>();
@@ -1439,6 +1558,9 @@ void CGameContext::OnConsoleInit()
 	Console()->Register("force_vote", "ss?r", CFGFLAG_SERVER, ConForceVote, this, "Force a voting option");
 	Console()->Register("clear_votes", "", CFGFLAG_SERVER, ConClearVotes, this, "Clears the voting options");
 	Console()->Register("vote", "r", CFGFLAG_SERVER, ConVote, this, "Force a vote to yes/no");
+
+	Console()->Register("sv_game_mode", "i", CFGFLAG_SERVER, ConSetGameMode, this, "0 - One/vs/All    1 - All/vs/One");
+	Console()->Register("sv_game_weapon", "i", CFGFLAG_SERVER, ConSetGameWeapon, this, "Game weapon");
 
 	Console()->Chain("sv_motd", ConchainSpecialMotdupdate, this);
 }
@@ -1468,6 +1590,8 @@ void CGameContext::OnInit()
 		m_pController = new CGameControllerSUR(this);
 	else if(str_comp(g_Config.m_SvGametype, "tdm") == 0)
 		m_pController = new CGameControllerTDM(this);
+	else if(str_comp(g_Config.m_SvGametype, "har") == 0)
+		m_pController = new CGameControllerHAR(this);
 	else
 		m_pController = new CGameControllerDM(this);
 

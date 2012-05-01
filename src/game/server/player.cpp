@@ -1,5 +1,6 @@
 /* (c) Magnus Auvinen. See licence.txt in the root of the distribution for more information. */
 /* If you are missing that file, acquire a complete release at teeworlds.com.                */
+#include <engine/shared/config.h>
 
 #include "entities/character.h"
 #include "gamecontext.h"
@@ -28,6 +29,9 @@ CPlayer::CPlayer(CGameContext *pGameServer, int ClientID, bool Dummy)
 	m_RespawnDisabled = GameServer()->m_pController->GetStartRespawnState();
 	m_DeadSpecMode = false;
 	m_Spawning = 0;
+	TimeDelay = 0;	
+	Catcher = 0;
+	NumFlag = -1;
 }
 
 CPlayer::~CPlayer()
@@ -180,6 +184,11 @@ void CPlayer::OnDisconnect()
 			}
 		}
 	}
+
+	if(IsCatcher())
+	{
+		GameServer()->m_pController->ChangeCatcher(m_ClientID, -1);
+	}
 }
 
 void CPlayer::OnPredictedInput(CNetObj_PlayerInput *NewInput)
@@ -320,7 +329,7 @@ void CPlayer::UpdateDeadSpecMode()
 	m_DeadSpecMode = false;
 }
 
-void CPlayer::SetTeam(int Team, bool DoChatMsg)
+void CPlayer::SetTeam(int Team)
 {
 	KillCharacter();
 
@@ -334,6 +343,16 @@ void CPlayer::SetTeam(int Team, bool DoChatMsg)
 	
 	if(Team == TEAM_SPECTATORS)
 	{
+		if(IsCatcher())
+		{
+			GameServer()->m_pController->ChangeCatcher(m_ClientID, -1);
+			if(!GameServer()->GameMode)
+			{
+				TimeDelay = Server()->Tick() + Server()->TickSpeed() * 60;
+				GameServer()->SendBroadcast("delay test", m_ClientID);
+			}
+		}
+
 		// update spectator modes
 		for(int i = 0; i < MAX_CLIENTS; ++i)
 		{
