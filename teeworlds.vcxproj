@@ -530,6 +530,7 @@
     <None Include="src\engine\external\wavpack\VERSION" />
     <None Include="src\engine\external\wavpack\wvfilter.c.no_compile" />
     <None Include="src\engine\external\zlib\VERSION" />
+    <None Include="src\game\generated\createdir.txt" />
     <None Include="src\osxlaunch\client.m" />
     <None Include="src\osxlaunch\server.m" />
     <None Include="storage.cfg" />
@@ -647,6 +648,9 @@
     <ClInclude Include="src\game\editor\auto_map.h" />
     <ClInclude Include="src\game\editor\editor.h" />
     <ClInclude Include="src\game\gamecore.h" />
+    <ClInclude Include="src\game\generated\client_data.h" />
+    <ClInclude Include="src\game\generated\protocol.h" />
+    <ClInclude Include="src\game\generated\server_data.h" />
     <ClInclude Include="src\game\layers.h" />
     <ClInclude Include="src\game\localization.h" />
     <ClInclude Include="src\game\mapitems.h" />
@@ -777,6 +781,10 @@
     <ClCompile Include="src\game\editor\layer_tiles.cpp" />
     <ClCompile Include="src\game\editor\popups.cpp" />
     <ClCompile Include="src\game\gamecore.cpp" />
+    <ClCompile Include="src\game\generated\client_data.cpp" />
+    <ClCompile Include="src\game\generated\nethash.cpp" />
+    <ClCompile Include="src\game\generated\protocol.cpp" />
+    <ClCompile Include="src\game\generated\server_data.cpp" />
     <ClCompile Include="src\game\layers.cpp" />
     <ClCompile Include="src\game\localization.cpp" />
     <ClCompile Include="src\game\server\entities\character.cpp" />

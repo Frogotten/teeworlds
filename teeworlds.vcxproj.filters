@@ -1613,6 +1613,9 @@
     <None Include="storage.cfg" />
     <None Include="bam.lua" />
     <None Include="configure.lua" />
+    <None Include="src\game\generated\createdir.txt">
+      <Filter>src\game\generated</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scripts\SDL_keysym.h">
@@ -2026,6 +2029,15 @@
     <ClInclude Include="src\versionsrv\versionsrv.h">
       <Filter>src\versionsrv</Filter>
     </ClInclude>
+    <ClInclude Include="src\game\generated\client_data.h">
+      <Filter>src\game\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\generated\protocol.h">
+      <Filter>src\game\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\generated\server_data.h">
+      <Filter>src\game\generated</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\base\system.c">
@@ -2423,6 +2435,18 @@
     </ClCompile>
     <ClCompile Include="src\versionsrv\versionsrv.cpp">
       <Filter>src\versionsrv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\generated\client_data.cpp">
+      <Filter>src\game\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\generated\nethash.cpp">
+      <Filter>src\game\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\generated\protocol.cpp">
+      <Filter>src\game\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\generated\server_data.cpp">
+      <Filter>src\game\generated</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

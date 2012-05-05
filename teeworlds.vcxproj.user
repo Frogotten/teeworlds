@@ -6,9 +6,9 @@
     <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Client_Debug|Win32'">WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Client_Release|Win32'">teeworlds.exe</LocalDebuggerCommand>
     <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Client_Release|Win32'">WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Server_Debug|Win32'">server_d.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Server_Debug|Win32'">teeworlds_srv_d.exe</LocalDebuggerCommand>
     <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Server_Debug|Win32'">WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Server_Release|Win32'">server.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Server_Release|Win32'">teeworlds_srv.exe</LocalDebuggerCommand>
     <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Server_Release|Win32'">WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>
