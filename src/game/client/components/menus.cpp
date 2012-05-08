@@ -389,7 +389,73 @@ float CMenus::DoScrollbarV(const void *pID, const CUIRect *pRect, float Current)
 	return ReturnValue;
 }
 
+int CMenus::DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, float Min, float Max)
+{
+	CUIRect Handle;
+	static float OffsetX;
+	pRect->VSplitLeft(33, &Handle, 0);
+	float Current = (Real - Min)/(Max - Min);
+	//(g_Config.m_ZoomMax-110)/390.0f)*390.0f)+110;
 
+	Handle.x += (pRect->w-Handle.w)*Current;
+
+	// logic
+	float ReturnValue = Current;
+	int Inside = UI()->MouseInside(&Handle);
+
+	if(UI()->ActiveItem() == pID)
+	{
+		if(!UI()->MouseButton(0))
+			UI()->SetActiveItem(0);
+
+		float Min = pRect->x;
+		float Max = pRect->w-Handle.w;
+		float Cur = UI()->MouseX()-OffsetX;
+		ReturnValue = (Cur-Min)/Max;
+		if(ReturnValue < 0.0f) ReturnValue = 0.0f;
+		if(ReturnValue > 1.0f) ReturnValue = 1.0f;
+
+		CUIRect Number = Handle;
+		//pRect->VSplitLeft(UI()->MouseX()+10, &Number, 0);
+		Number.HSplitTop(-Handle.h, &Number, 0); 
+		char aBuf[128];
+		str_format(aBuf, sizeof(aBuf), "%d", Real);
+
+		float tw = TextRender()->TextWidth(0, 14, aBuf, -1);
+		TextRender()->Text(0, Number.x + Number.w/2-tw/2, Number.y-Handle.h, 14, aBuf, -1);
+		//TextRender()->Text(0, Number.x+8-strlen(aBuf)*2, Number.y-Handle.h, 14, aBuf, -1);
+		//UI()->DoLabel(&Number, aBuf, 14.0f, 0);
+		//RenderTools()->DrawUIRect(&Number, vec4(1,1,1,0.25f), 0, 0);
+	}
+	else if(UI()->HotItem() == pID)
+	{
+		if(UI()->MouseButton(0))
+		{
+			UI()->SetActiveItem(pID);
+			OffsetX = UI()->MouseX()-Handle.x;
+		}
+	}
+
+	if(Inside)
+		UI()->SetHotItem(pID);
+
+	// render
+	CUIRect Rail;
+	pRect->HMargin(5.0f, &Rail);
+	RenderTools()->DrawUIRect(&Rail, vec4(1,1,1,0.25f), 0, 0.0f);
+
+	CUIRect Slider = Handle;
+	Slider.h = Rail.y-Slider.y;
+	RenderTools()->DrawUIRect(&Slider, vec4(1,1,1,0.25f), CUI::CORNER_T, 2.5f);
+	Slider.y = Rail.y+Rail.h;
+	RenderTools()->DrawUIRect(&Slider, vec4(1,1,1,0.25f), CUI::CORNER_B, 2.5f);
+
+	Slider = Handle;
+	Slider.Margin(5.0f, &Slider);
+	RenderTools()->DrawUIRect(&Slider, vec4(1,1,1,0.25f)*ButtonColorMul(pID), CUI::CORNER_ALL, 2.5f);
+	ReturnValue = ReturnValue*(Max-Min) + Min;
+	return (int)ReturnValue;
+}
 
 float CMenus::DoScrollbarH(const void *pID, const CUIRect *pRect, float Current)
 {
