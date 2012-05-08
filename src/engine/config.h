@@ -16,6 +16,8 @@ public:
 	virtual void RestoreStrings() = 0;
 	virtual void Save() = 0;
 
+	virtual void SaveTDTW() = 0;
+
 	virtual void RegisterCallback(SAVECALLBACKFUNC pfnFunc, void *pUserData) = 0;
 
 	virtual void WriteLine(const char *pLine) = 0;
