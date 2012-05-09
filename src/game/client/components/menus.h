@@ -41,7 +41,7 @@ class CMenus : public CComponent
 	int DoButton_DemoPlayer(const void *pID, const char *pText, int Checked, const CUIRect *pRect);
 	int DoButton_Sprite(const void *pID, int ImageID, int SpriteID, int Checked, const CUIRect *pRect, int Corners);
 	int DoButton_Toggle(const void *pID, int Checked, const CUIRect *pRect, bool Active);
-	int DoButton_Menu(const void *pID, const char *pText, int Checked, const CUIRect *pRect);
+	int DoButton_Menu(const void *pID, const char *pText, int Checked, const CUIRect *pRect, int Corners = CUI::CORNER_ALL);
 	int DoButton_MenuTab(const void *pID, const char *pText, int Checked, const CUIRect *pRect, int Corners);
 
 	int DoButton_CheckBox_Common(const void *pID, const char *pText, const char *pBoxText, int Checked, const CUIRect *pRect);
@@ -69,7 +69,7 @@ class CMenus : public CComponent
 	//static int ui_do_edit_box(void *id, const CUIRect *rect, char *str, unsigned str_size, float font_size, bool hidden=false);
 
 	float DoScrollbarV(const void *pID, const CUIRect *pRect, float Current);
-	int DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, float Min, float Max);
+	int DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, float Min, float Max, int ShowNumber = 1);
 	float DoScrollbarH(const void *pID, const CUIRect *pRect, float Current);
 	void DoButton_KeySelect(const void *pID, const char *pText, int Checked, const CUIRect *pRect);
 	int DoKeyReader(void *pID, const CUIRect *pRect, int Key);
@@ -156,6 +156,8 @@ class CMenus : public CComponent
 	static float ms_ButtonHeight;
 	static float ms_ListheaderHeight;
 	static float ms_FontmodHeight;
+
+	float TempSens;
 
 	// for settings
 	bool m_NeedRestartGraphics;

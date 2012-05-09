@@ -70,6 +70,7 @@ CMenus::CMenus()
 	m_aCallvoteReason[0] = 0;
 
 	m_FriendlistSelectedIndex = -1;
+	TempSens = 0.0f;
 }
 
 vec4 CMenus::ButtonColorMul(const void *pID)
@@ -114,9 +115,9 @@ int CMenus::DoButton_Toggle(const void *pID, int Checked, const CUIRect *pRect, 
 	return Active ? UI()->DoButtonLogic(pID, "", Checked, pRect) : 0;
 }
 
-int CMenus::DoButton_Menu(const void *pID, const char *pText, int Checked, const CUIRect *pRect)
+int CMenus::DoButton_Menu(const void *pID, const char *pText, int Checked, const CUIRect *pRect, int Corners)
 {
-	RenderTools()->DrawUIRect(pRect, vec4(1,1,1,0.5f)*ButtonColorMul(pID), CUI::CORNER_ALL, 5.0f);
+	RenderTools()->DrawUIRect(pRect, vec4(1,1,1,0.5f)*ButtonColorMul(pID), Corners, 5.0f);
 	CUIRect Temp;
 	pRect->HMargin(pRect->h>=20.0f?2.0f:1.0f, &Temp);
 	UI()->DoLabel(&Temp, pText, Temp.h*ms_FontmodHeight, 0);
@@ -402,12 +403,12 @@ float CMenus::DoScrollbarV(const void *pID, const CUIRect *pRect, float Current)
 	return ReturnValue;
 }
 
-int CMenus::DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, float Min, float Max)
+int CMenus::DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, float Min, float Max, int ShowNumber)
 {
 	CUIRect Handle;
 	static float OffsetX;
 	pRect->VSplitLeft(33, &Handle, 0);
-	float Current = (Real - Min)/(Max - Min);
+	float Current = (clamp(Real, int(Min), int(Max)) - Min)/(Max - Min);
 	//(g_Config.m_ZoomMax-110)/390.0f)*390.0f)+110;
 
 	Handle.x += (pRect->w-Handle.w)*Current;
@@ -428,17 +429,20 @@ int CMenus::DoCoolScrollbarH(const void *pID, const CUIRect *pRect, int Real, fl
 		if(ReturnValue < 0.0f) ReturnValue = 0.0f;
 		if(ReturnValue > 1.0f) ReturnValue = 1.0f;
 
-		CUIRect Number = Handle;
-		//pRect->VSplitLeft(UI()->MouseX()+10, &Number, 0);
-		Number.HSplitTop(-Handle.h, &Number, 0); 
-		char aBuf[128];
-		str_format(aBuf, sizeof(aBuf), "%d", Real);
+		if (ShowNumber)
+		{
+			CUIRect Number = Handle;
+			//pRect->VSplitLeft(UI()->MouseX()+10, &Number, 0);
+			Number.HSplitTop(-Handle.h, &Number, 0); 
+			char aBuf[128];
+			str_format(aBuf, sizeof(aBuf), "%d", Real);
 
-		float tw = TextRender()->TextWidth(0, 14, aBuf, -1);
-		TextRender()->Text(0, Number.x + Number.w/2-tw/2, Number.y-Handle.h, 14, aBuf, -1);
-		//TextRender()->Text(0, Number.x+8-strlen(aBuf)*2, Number.y-Handle.h, 14, aBuf, -1);
-		//UI()->DoLabel(&Number, aBuf, 14.0f, 0);
-		//RenderTools()->DrawUIRect(&Number, vec4(1,1,1,0.25f), 0, 0);
+			float tw = TextRender()->TextWidth(0, 14, aBuf, -1);
+			TextRender()->Text(0, Number.x + Number.w/2-tw/2, Number.y-Handle.h, 14, aBuf, -1);
+			//TextRender()->Text(0, Number.x+8-strlen(aBuf)*2, Number.y-Handle.h, 14, aBuf, -1);
+			//UI()->DoLabel(&Number, aBuf, 14.0f, 0);
+			//RenderTools()->DrawUIRect(&Number, vec4(1,1,1,0.25f), 0, 0);
+		}
 	}
 	else if(UI()->HotItem() == pID)
 	{
