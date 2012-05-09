@@ -35,7 +35,7 @@ CInput::CInput()
 
 	m_InputCurrent = 0;
 	m_InputGrabbed = 0;
-
+	m_InputDispatched = false;
 	m_LastRelease = 0;
 	m_ReleaseDelta = -1;
 
@@ -117,9 +117,13 @@ int CInput::Update()
 		Input()->MouseModeRelative();*/
 
 	// clear and begin count on the other one
-	m_InputCurrent^=1;
-	mem_zero(&m_aInputCount[m_InputCurrent], sizeof(m_aInputCount[m_InputCurrent]));
-	mem_zero(&m_aInputState[m_InputCurrent], sizeof(m_aInputState[m_InputCurrent]));
+	if(m_InputDispatched)
+	{
+		m_InputCurrent^=1;
+		mem_zero(&m_aInputCount[m_InputCurrent], sizeof(m_aInputCount[m_InputCurrent]));
+		mem_zero(&m_aInputState[m_InputCurrent], sizeof(m_aInputState[m_InputCurrent]));
+		m_InputDispatched = false;
+	}
 
 	{
 		int i;
