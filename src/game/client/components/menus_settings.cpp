@@ -189,7 +189,7 @@ void CMenus::RenderSettingsCountry(CUIRect MainView)
 	MainView.HSplitTop(10.0f, 0, &MainView);
 	static float s_ScrollValue = 0.0f;
 	int OldSelected = -1;
-	UiDoListboxStart(&s_ScrollValue, &MainView, 50.0f, Localize("Country"), "", m_pClient->m_pCountryFlags->Num(), 6, OldSelected, s_ScrollValue);
+	UiDoListboxStart(&s_ScrollValue, &MainView, 50.0f, Localize("Country"), "", m_pClient->m_pCountryFlags->Num(), 8, OldSelected, s_ScrollValue);
 
 	for(int i = 0; i < m_pClient->m_pCountryFlags->Num(); ++i)
 	{
@@ -197,7 +197,9 @@ void CMenus::RenderSettingsCountry(CUIRect MainView)
 		if(pEntry->m_CountryCode == g_Config.m_PlayerCountry)
 			OldSelected = i;
 
-		CListboxItem Item = UiDoListboxNextItem(&pEntry->m_CountryCode, OldSelected == i);
+		const CCountryFlags::CCountryFlag *pID0 = i == 0 ? 0 : m_pClient->m_pCountryFlags->GetByIndex(i-1);
+		const CCountryFlags::CCountryFlag *pID1 = i == m_pClient->m_pCountryFlags->Num() ? 0 : m_pClient->m_pCountryFlags->GetByIndex(i+1);
+		CListboxItem Item = UiDoListboxNextItem(&pEntry->m_CountryCode, OldSelected == i, &pID0->m_CountryCode, &pID1->m_CountryCode);
 		if(Item.m_Visible)
 		{
 			CUIRect Label;
@@ -384,7 +386,7 @@ void CMenus::RenderSettingsTee(CUIRect MainView)
 	}
 
 	int OldSelected = -1;
-	UiDoListboxStart(&s_InitSkinlist, &MainView, 50.0f, Localize("Skins"), "", s_paSkinList.size(), 4, OldSelected, s_ScrollValue);
+	UiDoListboxStart(&s_InitSkinlist, &MainView, 50.0f, Localize("Skins"), "", s_paSkinList.size(), 8, OldSelected, s_ScrollValue);
 
 	for(int i = 0; i < s_paSkinList.size(); ++i)
 	{
@@ -568,7 +570,7 @@ void CMenus::RenderSettingsControls(CUIRect MainView)
 
 			static int s_Button1 = 0;
 			if(DoButton_Menu((void*)&s_Button1, "<<", 0, &Button, CUI::CORNER_L))
-				g_Config.m_InpMousesens -= 1000;
+				g_Config.m_InpMousesens -= 500;
 
 			Temp.VSplitLeft(2.0f, 0, &Button);
 
@@ -583,7 +585,7 @@ void CMenus::RenderSettingsControls(CUIRect MainView)
 
 			static int s_Button3 = 0;
 			if(DoButton_Menu((void*)&s_Button3, ">>", 0, &Button, CUI::CORNER_R))
-				g_Config.m_InpMousesens += 1000;
+				g_Config.m_InpMousesens += 500;
 
 			Temp.VSplitRight(2.0f, &Button, 0);
 
@@ -999,7 +1001,7 @@ void CMenus::RenderFontSelection(CUIRect MainView)
 	UiDoListboxStart(&s_FontList , &MainView, 24.0f, Localize("Fonts"), "", s_Fonts.size(), 1, s_SelectedFont, s_ScrollValue);	
 	for(sorted_array<CFontFile>::range r = s_Fonts.all(); !r.empty(); r.pop_front())	
 	{		
-		CListboxItem Item = UiDoListboxNextItem(&r.front());		
+		CListboxItem Item = UiDoListboxNextItem(&r.front(), false, &r.back(), &r.next());		
 		if(Item.m_Visible)			
 			UI()->DoLabelScaled(&Item.m_Rect, r.front().m_Name, 16.0f, -1);	
 	}	
@@ -1119,7 +1121,7 @@ void CMenus::RenderLanguageSelection(CUIRect MainView)
 
 	for(sorted_array<CLanguage>::range r = s_Languages.all(); !r.empty(); r.pop_front())
 	{
-		CListboxItem Item = UiDoListboxNextItem(&r.front());
+		CListboxItem Item = UiDoListboxNextItem(&r.front(), false, &r.prev(), &r.next());
 
 		if(Item.m_Visible)
 		{

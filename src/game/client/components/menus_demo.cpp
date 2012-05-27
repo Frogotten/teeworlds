@@ -283,11 +283,8 @@ void CMenus::UiDoListboxStart(const void *pID, const CUIRect *pRect, float RowHe
 	// background
 	RenderTools()->DrawUIRect(&View, vec4(0,0,0,0.15f), 0, 0);
 
-	// prepare the scroll
-	View.VSplitRight(15, &View, &Scroll);
 
 	// setup the variables
-	gs_ListBoxOriginalView = View;
 	gs_ListBoxSelectedIndex = SelectedIndex;
 	gs_ListBoxNewSelected = SelectedIndex;
 	gs_ListBoxItemIndex = 0;
@@ -301,7 +298,7 @@ void CMenus::UiDoListboxStart(const void *pID, const CUIRect *pRect, float RowHe
 	// do the scrollbar
 	View.HSplitTop(gs_ListBoxRowHeight, &Row, 0);
 
-	int NumViewable = (int)(gs_ListBoxOriginalView.h/Row.h) + 1;
+	int NumViewable = (int)(View.h/Row.h) + 1;
 	int Num = (NumItems+gs_ListBoxItemsPerRow-1)/gs_ListBoxItemsPerRow-NumViewable+1;
 	if(Num < 0)
 		Num = 0;
@@ -314,10 +311,15 @@ void CMenus::UiDoListboxStart(const void *pID, const CUIRect *pRect, float RowHe
 
 		if(gs_ListBoxScrollValue < 0.0f) gs_ListBoxScrollValue = 0.0f;
 		if(gs_ListBoxScrollValue > 1.0f) gs_ListBoxScrollValue = 1.0f;
+
+		// prepare the scroll
+		View.VSplitRight(15, &View, &Scroll);
+
+		Scroll.HMargin(5.0f, &Scroll);
+		gs_ListBoxScrollValue = DoScrollbarV(pID, &Scroll, gs_ListBoxScrollValue);
 	}
 
-	Scroll.HMargin(5.0f, &Scroll);
-	gs_ListBoxScrollValue = DoScrollbarV(pID, &Scroll, gs_ListBoxScrollValue);
+	gs_ListBoxOriginalView = View;
 
 	// the list
 	gs_ListBoxView = gs_ListBoxOriginalView;
@@ -367,7 +369,7 @@ CMenus::CListboxItem CMenus::UiDoListboxNextRow()
 	return Item;
 }
 
-CMenus::CListboxItem CMenus::UiDoListboxNextItem(const void *pId, bool Selected)
+CMenus::CListboxItem CMenus::UiDoListboxNextItem(const void *pId, bool Selected, const void *pID0, const void *pID1)
 {
 	int ThisItemIndex = gs_ListBoxItemIndex;
 	if(Selected)
@@ -401,8 +403,21 @@ CMenus::CListboxItem CMenus::UiDoListboxNextItem(const void *pId, bool Selected)
 					int NewIndex = -1;
 					if(m_aInputEvents[i].m_Flags&IInput::FLAG_PRESS)
 					{
-						if(m_aInputEvents[i].m_Key == KEY_DOWN) NewIndex = gs_ListBoxNewSelected + 1;
-						if(m_aInputEvents[i].m_Key == KEY_UP) NewIndex = gs_ListBoxNewSelected - 1;
+						if (UI()->LastActiveItem() == pId)
+						{
+							if(m_aInputEvents[i].m_Key == KEY_DOWN)
+							{
+								NewIndex = gs_ListBoxNewSelected + 1;
+								UI()->SetActiveItem(pID1);
+								UI()->SetActiveItem(0);
+							}
+							if(m_aInputEvents[i].m_Key == KEY_UP) 
+							{
+								NewIndex = gs_ListBoxNewSelected - 1;
+								UI()->SetActiveItem(pID0);
+								UI()->SetActiveItem(0);
+							}
+						}
 					}
 					if(NewIndex > -1 && NewIndex < gs_ListBoxNumItems)
 					{

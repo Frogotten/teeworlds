@@ -148,12 +148,12 @@ void CMenus::RenderServerbrowserServerList(CUIRect View)
 	static int s_ScrollBar = 0;
 	static float s_ScrollValue = 0;
 
-	Scroll.HMargin(5.0f, &Scroll);
-	s_ScrollValue = DoScrollbarV(&s_ScrollBar, &Scroll, s_ScrollValue);
-
 	int ScrollNum = NumServers-Num+1;
 	if(ScrollNum > 0)
 	{
+		Scroll.HMargin(5.0f, &Scroll);
+		s_ScrollValue = DoScrollbarV(&s_ScrollBar, &Scroll, s_ScrollValue);
+
 		if(m_ScrollOffset)
 		{
 			s_ScrollValue = (float)(m_ScrollOffset)/ScrollNum;
